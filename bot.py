@@ -153,4 +153,4 @@ async def leave(inter: discord.Interaction):
 if __name__ == "__main__":
     if not TOKEN:
         raise SystemExit("❌ DISCORD_TOKEN not set in environment.")
-    bot.run(TOKEN)
+    bot.run(MTQyNDQ1MTI1MDQ3MjA5NTc2Ng.GSePOW.jlQ49YlPF_qEdWRnpEAxMjtM5I5MxYX3asyyMQ)
