@@ -9,11 +9,12 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
 # -------- CONFIG --------
+# Matches your Render environment variable names
 TOKEN = os.getenv("DISCORD_TOKEN")
-LAVALINK_URL = os.getenv("LAVALINK_URL", "http://lavalink:2333")
-LAVALINK_PASSWORD = os.getenv("LAVALINK_PASSWORD", "youshallnotpass")
-SPOTIFY_ID = os.getenv("SPOTIFY_CLIENT_ID")
-SPOTIFY_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
+LAVALINK_URL = os.getenv("URL", "http://lavalink:2333")
+LAVALINK_PASSWORD = os.getenv("PASSWORD", "youshallnotpass")
+SPOTIFY_ID = os.getenv("CLIENT_ID")
+SPOTIFY_SECRET = os.getenv("CLIENT_SECRET")
 DJ_ROLE_NAME = os.getenv("DJ_ROLE_NAME", "DJ")
 DEFAULT_VOLUME = float(os.getenv("DEFAULT_VOLUME", "0.5"))
 
@@ -153,4 +154,4 @@ async def leave(inter: discord.Interaction):
 if __name__ == "__main__":
     if not TOKEN:
         raise SystemExit("❌ DISCORD_TOKEN not set in environment.")
-    bot.run(MTQyNDQ1MTI1MDQ3MjA5NTc2Ng.GSePOW.jlQ49YlPF_qEdWRnpEAxMjtM5I5MxYX3asyyMQ)
+    bot.run(TOKEN)
