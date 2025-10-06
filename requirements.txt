@@ -1,3 +1,4 @@
 discord.py==2.4.0
 wavelink==3.2.0
 spotipy==2.24.0
+python==3.11.9
